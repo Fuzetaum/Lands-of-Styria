@@ -4,6 +4,8 @@
 // two times a subexpression, or a subexpression times two, with
 // the sum of that subexpression with itself.
 
+//Testing if pushing works!
+
 object warmup {
   sealed abstract trait Expr
   case class Plus(e1: Expr, e2:Expr) extends Expr
