@@ -1,0 +1,3 @@
+Times(Num(2), Plus(Num(1),Times(Num(3),Num(2))))
+Plus(Num(2), Times(Plus(Num(2), Times(Num(2), Num(2))), Num(2)))
+Times(Num(3), Plus(Num(1), Plus(Plus(Num(1), Num(3)), Times(Num(3), Num(5)))))

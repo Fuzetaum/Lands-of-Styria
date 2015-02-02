@@ -41,7 +41,7 @@ object warmup {
   // One simple test case:
   // (* 2 (+ 1 (* 3 2))) should duplicate to (+ (+ 1 (+ 3 3)) (+ 1 (+ 3 3)))
   def main(argv: Array[String]) {
-    val e : Expr = Times(Num(2), Plus(Num(1),Times(Num(3),Num(2))))
+    val e : Expr = Times(Num(3), Plus(Num(1), Plus(Plus(Num(1), Num(3)), Times(Num(3), Num(5)))))
     println(s"dup(${str(e)}) -> ${str(dup(e))} => ${eval(copy(e))}")
   }
 }
