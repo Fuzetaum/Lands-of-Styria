@@ -1,5 +1,8 @@
 package com.company.styria.equipment;
 
-public abstract class Legs {
-
+public abstract class Legs extends Equipment {
+	@Override
+	public Object getEquipType() {return Legs.class;}
+	@Override
+	public Integer getEquipSlot() {return Equipment.EQUIPSLOT_LEGS;}
 }

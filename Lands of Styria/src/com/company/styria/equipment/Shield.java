@@ -1,5 +1,8 @@
 package com.company.styria.equipment;
 
-public abstract class Shield {
-
+public abstract class Shield extends Equipment {
+	@Override
+	public Object getEquipType() {return Shield.class;}
+	@Override
+	public Integer getEquipSlot() {return Equipment.EQUIPSLOT_HAND;}
 }
