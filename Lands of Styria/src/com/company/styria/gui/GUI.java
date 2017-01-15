@@ -1,6 +1,5 @@
 package com.company.styria.gui;
 
-import org.lwjgl.glfw.GLFW;
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
@@ -50,7 +49,7 @@ public class GUI implements Runnable {
 	// glfwInit returns false when a problem occurs during GLFW initalization
 	if(! glfwInit()) System.err.println("GLFW initialization failed");
 	glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
-	window = glfwCreateWindow(640, 480, "Lands of Styria", NULL, NULL);
+	window = glfwCreateWindow(GUISettings.getWindowHeight(), GUISettings.getWindowWidth(), "Lands of Styria", NULL, NULL);
 	if(window == NULL) System.err.println("Window creation failed");
 	long vidmode = nglfwGetVideoMode(glfwGetPrimaryMonitor());
 	glfwSetWindowPos(window, 100, 100);
