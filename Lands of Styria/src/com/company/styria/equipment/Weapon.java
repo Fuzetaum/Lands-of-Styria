@@ -5,7 +5,7 @@ public abstract class Weapon extends Equipment{
 	private Integer baseMagAtk;
 	private Float defenseModifier;
 	
-	public Integer getphysAtk() {return this.basePhysAtk;}
+	public Integer getPhysAtk() {return this.basePhysAtk;}
 	public Integer getMagAtk() {return this.baseMagAtk;}
 	@Override
 	public Object getEquipType() {return Weapon.class;}
